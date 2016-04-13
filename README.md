@@ -32,3 +32,8 @@ cpu,unit=unit1 value=60,severity="low"\n
   close: boolean // close the socket after sending the message. default true;
 }
 ```
+
+#Test
+```
+npm test
+```
