@@ -26,7 +26,7 @@ describe("Influxdb udp connector", function() {
       values:"value=50"
     });
     sinon.assert.calledOnce(mock.send);
-    var buf=new Buffer("cpu value=50");
+    var buf=new Buffer("cpu value=50\n");
     sinon.assert.calledWith(mock.send,buf,0,buf.length,3556,"127.0.50.11");
     sinon.assert.calledOnce(mock.close);
   });
@@ -46,7 +46,7 @@ describe("Influxdb udp connector", function() {
       close:false
     });
     sinon.assert.calledOnce(mock.send);
-    var buf=new Buffer("cpu,project=pro1 value=50 123456789s");
+    var buf=new Buffer("cpu,project=pro1 value=50 123456789s\n");
     sinon.assert.calledWith(mock.send,buf,0,buf.length,3556,"127.0.50.11");
     sinon.assert.notCalled(mock.close);
   });

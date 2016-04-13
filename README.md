@@ -15,6 +15,11 @@ var udpSocket=send({
   values:"value=60,severity=\"low\""
 });
 ```
+This will send following text to Influxdb UDP through line protocol:
+```
+cpu,unit=unit1 value=60,severity="low"\n
+```
+
 #Params
 ```
 {
