@@ -1,6 +1,6 @@
 {
   "name": "influxdbudp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Influxdb UDP connector following line protocol supported by influx 0.9+",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,9 @@
     {
       "name": "Keyang Xiang",
       "email": "keyang.xiang@gmail.com"
+    },{
+      "name": "Evan Shortiss",
+      "email":"evanshortiss@gmail.com"
     }
   ],
   "license": "MIT",
